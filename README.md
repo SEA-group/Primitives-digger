@@ -13,6 +13,6 @@ These scripts can add a pair of vertex and indice sections into a bunch of *.pri
 3. Run `Main.m`
 4. Now the sections are added, Original *.primitives* files are backed up and renamed to **.primitivesbak*.
 
-### Attention
+## Attention
 1. **The backup will be overwritten if you run the script twice**
-2. This tool helps you to dig a hole on the file, but you still need a dedicated model tool to put your 3d mesh inside.
+2. This tool helps you to dig a hole （only one) on the file, but you still need a dedicated model tool to put your 3d mesh inside.
