@@ -9,10 +9,10 @@ These scripts can add a pair of vertex and indice sections into a bunch of *.pri
 
 ## How to use
 1. Put your *.primitives* files into `Queue/`
-2. Open `Main.m`, in line 16 you can assign the name of the sections to be added.
+2. Open `Main.m`, assign the new section name in line 19; toggle "wire" vertex type in line 23; toggle "list32" in line 24.
 3. Run `Main.m`
 4. Now the sections are added, Original *.primitives* files are backed up and renamed to **.primitivesbak*.
 
 ## Attention
 1. **The backup will be overwritten if you run the script twice**
-2. This tool helps you to dig a hole （only one) on the file, but you still need a dedicated model tool to put your 3d mesh inside.
+2. This tool helps you to dig a hole （only one) on the file, but you still need a dedicated model tool to put your 3D mesh inside.
