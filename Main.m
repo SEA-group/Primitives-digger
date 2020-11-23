@@ -1,7 +1,10 @@
 % This script can help adding a pair of vertex & index chunks (i.e. one renderSet) into a bunch of .primitives files
-% ver.2020.10.01
+% ver.2020.11.23
 % requirement:
 % - PrimitivesAppend_Mk1.m
+% - PrimitivesAppend32_Mk1.m
+% - PrimitivesAppendWire_Mk1.m
+% - PrimitivesAppendWire32_Mk1.m
 % - AntiNormalConvertor_Mk1.m
 % by AstreTunes@SEA-group
 
@@ -14,6 +17,11 @@ close all;
 
 fileNames = dir('Queue/*.primitives');
 chunkName = 'new_chunk';
+
+% !!!Attention!!! 
+% "wire" type vertex chunk cannot be added to skinned model 
+wire = 0;
+list32 = 1;
 
 %% Processing
 
@@ -30,7 +38,19 @@ for indFileInFolder = 1: size(fileNames, 1)
     clear originalFile;
 
     % Generate new primitives content
-    primCodeKai = PrimitivesAppend_Mk1(primCode, chunkName);
+    if wire == 1
+        if list32 == 1
+            primCodeKai = PrimitivesAppendWire32_Mk1(primCode, chunkName);
+        else
+            primCodeKai = PrimitivesAppendWire_Mk1(primCode, chunkName);
+        end
+    else
+        if list32 == 1
+            primCodeKai = PrimitivesAppend32_Mk1(primCode, chunkName);
+        else
+            primCodeKai = PrimitivesAppend_Mk1(primCode, chunkName);
+        end
+    end
 
     % Write to file
     newFile=fopen(fileName, 'w');
