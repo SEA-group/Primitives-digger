@@ -87,7 +87,7 @@ function primCodeKai = PrimitivesAppendWire32_Mk1(primCode, chunkName)
     else
 
         primCodeKai(cursor+1 : cursor+7) = [120 121 122 110 117 118 114]';  % xyznuvr 
-        primCodeKai(cursor+8 : cursor+64) = zeros(56, 1);  % fill "vertex type" string
+        primCodeKai(cursor+8 : cursor+64) = zeros(57, 1);  % fill "vertex type" string
         primCodeKai(cursor+65 : cursor+68) =  [3 0 0 0];    % vertices count
         cursor = cursor + 68;
 
