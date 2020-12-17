@@ -9,7 +9,7 @@ These scripts can add a pair of vertex and indice sections into a bunch of *.pri
 
 ## How to use
 1. Put your *.primitives* files into `Queue/`
-2. Open `Main.m`, assign the new section name in line 19; toggle "wire" vertex type in line 23; toggle "list32" in line 24.
+2. Open `Main.m`, assign the new section name in line 20; toggle "wire" vertex type in line 21; toggle "list32" in line 22; "skinned" property will be detected by the script automaticaly. You can add several sections at once by adding multple items in *chunkList{}*.
 3. Run `Main.m`
 4. Now the sections are added, Original *.primitives* files are backed up and renamed to **.primitivesbak*.
 
