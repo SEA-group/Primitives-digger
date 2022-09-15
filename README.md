@@ -1,7 +1,7 @@
 # Primitives digger
 
-![GitHub last commit](https://img.shields.io/github/last-commit/SEA-group/Primitives-Digger)
-![GitHub issues](https://img.shields.io/github/issues-raw/SEA-group/Primitives-Digger)
+![GitHub last commit](https://img.shields.io/github/last-commit/SEA-group/Primitives-digger)
+![GitHub issues](https://img.shields.io/github/issues-raw/SEA-group/Primitives-digger)
 
 By AstreTunes @ SEA group
 
